@@ -17,10 +17,10 @@
 <resources>
     <!-- If set, specifies the color to apply to the drawable as a tint. By default,
          no tint is applied. May be a color state list. -->
-    <attr name="tint" />
+    <attr name="tint_" />
     <!-- When a tint color is set, specifies its Porter-Duff blending mode. The
          default value is src_in, which treats the drawable as an alpha mask. -->
-    <attr name="tintMode">
+    <attr name="tintMode_">
         <!-- The tint is drawn on top of the drawable.
              [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
         <enum name="src_over" value="3" />
@@ -57,10 +57,10 @@
     <declare-styleable name="VectorDrawable">
         <!-- If set, specifies the color to apply to the drawable as a tint. By default,
                  no tint is applied. May be a color state list. -->
-        <attr name="tint" />
+        <attr name="tint_" />
         <!-- When a tint color is set, specifies its Porter-Duff blending mode. The
                  default value is src_in, which treats the drawable as an alpha mask. -->
-        <attr name="tintMode" />
+        <attr name="tintMode_" />
         <!-- Indicates if the drawable needs to be mirrored when its layout direction is
                  RTL (right-to-left). -->
         <attr name="autoMirrored" />
