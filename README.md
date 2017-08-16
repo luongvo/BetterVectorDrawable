@@ -1,5 +1,5 @@
 ## Why this?
-This fork fixs some issues when using original https://github.com/a-student/BetterVectorDrawable with android support lib v26 or later by rename some duplicated attrs like `tint` > `tint_`, `tintMode` > `tintMode_`
+This fork fixes some issues when using original https://github.com/a-student/BetterVectorDrawable with android support lib v26 or later by rename some duplicated attrs like `tint` > `tint_`, `tintMode` > `tintMode_`
 
 ## `@Deprecated`
 Official [Android Support Library 23.2](http://android-developers.blogspot.ru/2016/02/android-support-library-232.html) added support for Vector Drawables and Animated Vector Drawables. Please, use that. This lib is still usable, but it is no longer maintained.
