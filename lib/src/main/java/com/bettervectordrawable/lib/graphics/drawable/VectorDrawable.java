@@ -538,11 +538,11 @@ public class VectorDrawable extends Drawable {
         state.mChangingConfigurations |= TypedArrayExtension.getChangingConfigurations(a);
         // Extract the theme attributes, if any.
         state.mThemeAttrs = extractThemeAttrs(a);
-        final int tintMode = a.getInt(R.styleable.VectorDrawable_tintMode, -1);
+        final int tintMode = a.getInt(R.styleable.VectorDrawable_tintMode_, -1);
         if (tintMode != -1) {
             state.mTintMode = parseTintMode(tintMode, Mode.SRC_IN);
         }
-        final ColorStateList tint = a.getColorStateList(R.styleable.VectorDrawable_tint);
+        final ColorStateList tint = a.getColorStateList(R.styleable.VectorDrawable_tint_);
         if (tint != null) {
             state.mTint = tint;
         }
