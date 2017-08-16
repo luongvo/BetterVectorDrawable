@@ -1,3 +1,6 @@
+## Why this?
+This fork fixs some issues when using original https://github.com/a-student/BetterVectorDrawable with android support lib v26 or later by rename some duplicated attrs like `tint` > `tint_`, `tintMode` > `tintMode_`
+
 ## `@Deprecated`
 Official [Android Support Library 23.2](http://android-developers.blogspot.ru/2016/02/android-support-library-232.html) added support for Vector Drawables and Animated Vector Drawables. Please, use that. This lib is still usable, but it is no longer maintained.
 
@@ -11,18 +14,20 @@ Xamarin version of BetterVectorDrawable can be found [here](https://github.com/V
 *Keywords: vector drawable, support library, compat, svg*
 
 ## Attaching the library
-[![JCenter](https://img.shields.io/github/release/a-student/BetterVectorDrawable.svg)](#attaching-the-library)
-
-The lib is deployed to the JCenter repository, so just add this line to the **build.gradle** *dependencies* section:
-```groovy
-compile 'com.bettervectordrawable:lib:0.8+'
+Step 1. Add the JitPack repository to your build file. Add it in your root build.gradle at the end of repositories:
 ```
-In addition, you will need to disable automatic generation of PNGs at build time by adding `generatedDensities = []` line to the *defaultConfig* section:
-```groovy
-defaultConfig {
-    generatedDensities = []
-    …
-}
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+Step 2. Add the dependency
+```
+	dependencies {
+	        compile 'com.github.luongvo:BetterVectorDrawable:v0.9.1'
+	}
 ```
 
 ## Usage
