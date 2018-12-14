@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/luongvo/BetterVectorDrawable.svg)](https://jitpack.io/#luongvo/BetterVectorDrawable)
+
 ## Why this?
 This fork fixes some issues when using original https://github.com/a-student/BetterVectorDrawable with android support lib v26 or later by rename some duplicated attrs like `tint` > `tint_`, `tintMode` > `tintMode_`
 
